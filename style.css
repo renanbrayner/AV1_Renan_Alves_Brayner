@@ -1,0 +1,154 @@
+:root {
+	--purple: #6e0ad6;
+	--green: #8ce563;
+	--white: #fafafa;
+	--gray: #e3e3e3;
+	--light-purple: #a0b0d0;
+	--black: #2f2f2f;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--white);
+	font-family: sans-serif;
+	color: var(--black);
+}
+
+a {
+	text-decoration: none;
+	color: unset;
+}
+
+header {
+	background-color: var(--purple);
+	color: var(--white);
+	height: 142px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;	
+	padding: 0 142px;
+}
+
+nav ul {
+	list-style-type: none;
+	display: flex;
+	gap: 3rem;
+}
+
+nav a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: var(--white);
+	gap: 0.5rem;
+	font-weight: bold;
+	transition: transform 0.2s ease-in-out;
+}
+
+nav a:hover {
+	transform: translateY(-3px);
+}
+
+#user-area {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	text-decoration: none;
+	gap: 0.5rem;
+}
+
+#user-area span {
+	font-weight: 600;
+}
+
+#user-area a {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+#profile-pic {
+	border-radius: 50%;
+	border: 3px solid var(--white);
+}
+
+main {
+	width: 100%;
+	padding: 0 142px;
+	background-color: var(--gray);
+	min-height: calc(100vh - 142px - 80px);
+	color: var(--black);
+}
+
+.content-wrapper {
+	background-color: var(--white);
+	min-height: calc(100vh - 142px - 80px);
+	padding: 71px;
+}
+
+.product-wrapper {
+	padding: 71px 0;
+	display: flex;
+	gap: 2rem;
+	flex-direction: row;
+}
+
+.product-wrapper ul {
+	list-style-type: none;
+}
+
+.product-wrapper span {
+	font-weight: bold;
+}
+
+.product-wrapper img {
+	border-radius: 16px;
+}
+
+.product-list {
+	padding: 80px 0;
+	display: flex;
+	gap: 5rem;
+}
+
+.product img {
+	border-radius: 10px;
+}
+
+.buy-btn {
+	padding: 20px 40px;
+	font-weight: bold;
+	font-size: 2rem;
+	border: none;
+	background-color: var(--green);
+	border-radius: 6px;
+	color: var(--white);
+	cursor: pointer;
+}
+
+.buy-btn:hover {
+	opacity: 0.8;
+}
+
+.back-btn {
+	display: flex;
+	flex-direction: center;
+	align-items: center;
+	gap: 0.5rem;
+	font-size: 1.4rem;
+	color: var(--purple);
+	margin-top: 20px;
+}
+
+footer {
+	height: 80px;
+	background-color: var(--light-purple);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

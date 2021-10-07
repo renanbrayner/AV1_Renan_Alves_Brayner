@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>OLY - O Segundo Maior Site de Compra e Venda do Brasil</title>
+</head>
+<body>
+	<header>
+		<a href="/">
+			<img src="./assets/logo.png" alt="OLY"/>
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a class="categoria-btn" href="eletronicos.html">
+						<img height="30" width="30" src="./assets/laptop-phone.svg"/>
+						<span>eletrônicos</span>
+					</a>
+				</li>
+				<li>
+					<a class="categoria-btn" href="imoveis.html">
+						<img height="30" width="30" src="./assets/home.svg" />
+						<span>imóveis</span>
+					</a>
+				</li>
+				<li>
+					<a class="categoria-btn" href="veiculos.html">
+						<img height="30" width="30" src="./assets/car.svg" />
+						<span>veiculos</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="user-area">
+			<div>
+				<span>Wesley Oliveira da Silva</span> <br />
+			</div>
+			<img id="profile-pic" height="80" width="80" src="./assets/wesley.jpg" alt="Foto de perfil" />
+		</div>
+	</header>
+	<main>
+		<div class="content-wrapper">
+			<h1>Notebook lenovo t420</h1>
+			<div class="product-wrapper">
+				<img src="./assets/t420.jpg" height="400px" width="600px">
+				<ul>
+					<li><span>Descrição:</span> <br />
+						Marca: Lenovo <br />
+						Modelo: T420 T430 <br />
+						Processador I5 <br />
+						Memória: 4GB DDR3 <br />
+						Armazenamento: HD 500GB <br />
+						Tamanho da Tela: 14" LED Slim <br />
+					</li>
+					<li><span>Preço:</span> R$ 1.900,00</li>
+					<li><span>Contato:</span> <a href="mailto:example@gmail.com?subject=notebook lenovo t420">Entrar em contato</a></li>
+				</ul>
+			</div>
+			<button class="buy-btn" onclick="alertMessage()">Comprar</button>
+			<a class="back-btn" href="./index.html"><img src="./assets/arrow-left-circle-purple.svg" /> voltar</a>
+		</div>
+	</main>
+	<footer>
+		© Mau Negócio Atividades de Internet Ltda. Rua João Alves Mendes, 244, Janga - 53437-450 - Paulista, PE
+	</footer>
+  <script>
+    function alertMessage() {
+      alert("entre em contato");
+    }
+  </script>
+</body>
+</html>
